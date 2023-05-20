@@ -1,0 +1,143 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --primary-color: #2474e5;
+    --border-color: #a1a8b1;
+}
+
+body {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.ticket-static-contain {
+    flex: 1 1 0%;
+    margin-left: 32px;
+}
+
+.static {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.static::after {
+    position: absolute;
+    bottom: 0;
+    content: "";
+    height: 1px;
+    width: 100%;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.tab-action {
+    font-size: 14px;
+    font-weight: 300;
+    padding: 14px 0;
+    cursor: pointer;
+    transition: color .3s
+}
+
+.tab-action:hover {
+    color: #40a9ff;
+}
+
+.tab-action.active {
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.static-content {
+
+    margin: 16px 0;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5;
+    width: 100%;
+}
+
+.static-content > a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.static-wrap {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slide-static {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+.thong-tin-ve-da-dat {
+    margin: 16px 0;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    background-color: #fff;
+    position: relative;
+}
+
+.thong-tin-ve-contain {
+    display: flex;
+    flex: 1 1 0%;
+    flex-direction: column;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.chi-tiet-ve {
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+.chi-tiet-ve h3 {
+    font-size: 28px;
+    opacity: 0.8;
+}
+
+.thong-tin-ve-contain:hover {
+    color: var(--primary-color) !important;
+    transition: color .3s;
+}
+
+.btn-lien-lac-contain {
+    border-top: 1px solid var(--border-color);
+    padding: 4px 0;
+    
+}
+
+.btn-lien-lac {
+    color: var(--primary-color);
+    height: 39px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 4px;
+    font-weight: 400;
+}
+
+.trang-thai-ve {
+    background-color: #ffc700;
+    color: var(--black-color);
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    padding: 0 4px;
+    height: 21px;
+    line-height: 21px;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 4px;
+}
+
+.btn-lien-lac:hover {
+    cursor: pointer;
+}
+

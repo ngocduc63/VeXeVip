@@ -1,0 +1,176 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --primary-color: #2474e5;
+    --border-color: #a1a8b1;
+}
+
+body {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.infor-body {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 980px;
+}
+
+#header {
+    box-shadow: 0 0 8px 0 var(--border-color);
+    width: 100%;
+}
+
+.page-location {
+    margin-top: 16px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.page-location a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.infor-contain {
+    margin-top: 16px;
+    display: flex;
+}
+
+.menu {
+    font-size: 14px;
+    line-height: 1.5;
+    background-color: #fff;
+    font-weight: 300;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 16px 16px 0 16px;
+}
+
+.menu-item {
+    list-style: none;
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+
+.menu-item > a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+/* Đổi màu chữ theo page chính trong menu */
+.main-page {
+    color: var(--primary-color) !important;
+}
+
+.input-line {
+    margin-bottom: 16px;
+}
+
+.infor-input {
+    margin-left: 32px;
+    flex: 1 1 0%;
+}
+
+.input-line > label {
+    line-height: 1.5;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.input-line > input {
+    display: inline-block;
+    width: 100%;
+    height: 32px;
+    padding: 4px 11px;
+    color: rgba(0,0,0,.65);
+    font-size: 14px;
+    line-height: 1.5;
+    background-color: #fff;
+    border-radius: 4px;
+    border: 1px solid var(--border-color);
+}
+
+.input-line > input:focus {
+    outline: none;
+    border: 1px solid var(--primary-color);
+    box-shadow: 0px 0px 5px 0px var(--primary-color);
+}
+
+.input-line > input:hover {
+    border: 1px solid var(--primary-color);
+}
+
+.gender--checked {
+    color: var(--primary-color);
+    background-color: #cccccc;
+    border-radius: 4px;
+}
+.gender-contain {
+    display: flex;
+    position: relative;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    height: 32px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.gender {
+    flex: 1 1 0%;
+    text-align: center;
+    padding: 0 15px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 32px;
+}
+
+.gender:hover {
+    color: var(--primary-color);
+}
+
+#female::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 66.66666%;
+    height: 100%;
+    border-right: 1px solid var(--border-color);
+}
+
+#female::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 66.66666%;
+    height: 100%;
+    border-right: 1px solid var(--border-color);
+}
+
+.btn-line {
+    padding: 16px 0 0;
+    position: relative;
+}
+
+.btn-save {
+    width: 100%;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    height: 40px;
+    cursor: pointer;
+    color: #000;
+}
+.btn-save:hover {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+.btn-line::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: var(--border-color);
+    display: block;
+    top: 0;
+}

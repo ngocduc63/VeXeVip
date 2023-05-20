@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vé Xe Vip</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/TrangChu.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=vietnamese"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="https://vexere.com/images/vexere-ico.ico?v=0.0.3" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+</head>
+
+<body>
+    <div id="main">
+        <div id="header">
+            <div class="logo">
+                <img src="./assets/img/logo-web.png" alt="">
+            </div>
+            <ul id="nav">
+                <li class="navbar-item"><a href="#tuyen-duong-pho-bien">Tuyến đường phổ biến</a></li>
+                <li class="navbar-item"><a href="#uu-dai">Ưu đãi</a></li>
+                <li class="navbar-item"><a href="#feedback-kh">Feedback của khách hàng</a></li>
+                <li>
+                    <a class="btn-hotline" href="">
+                        <i class="fa-solid fa-phone"></i>
+                        Hotline
+                    </a>
+                </li>
+                <li>
+                    <div class="user">
+                        <i class="fa-solid fa-user"></i>
+                        <i class="fa-solid fa-caret-down" style="padding-left: 10px;"></i>
+                        <ul class="sub-menu">
+                            <li class="sub-item">
+                                <div class="icon-contain">
+                                    <i class="fa-regular fa-user"></i>
+                                </div>
+                                <a href="./ThongTinTK.html">Thông tin tài khoản</a>
+                            </li>
+                            <li class="sub-item">
+                                <div class="icon-contain">
+                                    <i class="fa-solid fa-user-tag"></i>
+                                </div>
+                                <a >Thành viên <b>thường</b></a>
+                            </li>
+                            <li class="sub-item">
+                                <div class="icon-contain">
+                                    <i class="fa-solid fa-ticket"></i>
+                                </div>
+                                <a href="./VeCuaToi.html">Vé của tôi</a>
+                            </li>
+                            <li class="sub-item">
+                                <div class="icon-contain">
+                                    <i class="fa-solid fa-gift"></i>
+                                </div>
+                                <a >Ưu đãi</a>
+                            </li>
+                            <li class="sub-item">
+                                <div class="icon-contain">
+                                    <i class="fa-regular fa-credit-card"></i>
+                                </div>
+                                <a >Quản lý thẻ</a>
+                            </li>
+                            <li class="sub-item">
+                                <div class="icon-contain">
+                                    <i class="fa-regular fa-comment-dots"></i>
+                                </div>
+                                <a >Nhận xét chuyến đi</a>
+                            </li>
+                            <li class="sub-item">
+                                <div class="icon-contain">
+                                    <i class="fa-solid fa-right-from-bracket"></i>
+                                </div>
+                                <a id="logout">Đăng xuất</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div id="slider">
+            <div class="slider-content">
+                <h2 class="text-content">VeXeVip - Cam kết hoàn 150% nếu nhà xe không giữ vé</h2>
+                <div class="slider-search">
+                    <div class="buytk-page__search">
+                        <div class="tinh-thanh-input noi-di">
+                            <i class="fa-solid fa-location-dot icon-location "></i>
+                            <input type="text" name="" id="" class="input-noi-di" placeholder="Tỉnh, thành phố nơi đi"
+                                value="Hà Nội">
+                            <ul class='form-input'>
+                                <header>Tỉnh - Thành phố</header>
+                                <ul class="thanh-pho-list">
+                                </ul>
+                            </ul>
+                        </div>
+                        <div class="swap">
+                            <i class="fa-solid fa-right-left icon-swap"></i>
+                        </div>
+                        <div class="tinh-thanh-input noi-den">
+                            <i class="fa-solid fa-location-dot icon-location"></i>
+                            <input type="text" name="" id="" class="input-noi-den" placeholder="Tỉnh, thành phố nơi đến"
+                                value="Thái Bình">
+                            <ul class='form-input'>
+                                <header>Tỉnh - Thành phố</header>
+                                <ul class="thanh-pho-list">
+                                </ul>
+                            </ul>
+                        </div>
+                        <div class="ngay-di">
+                            <i class="fa-solid fa-calendar-days icon-calendar"></i>
+                            <input type="date" name="" id="" class="input-ngay-di" placeholder="Nhập ngày đi">
+                        </div>
+                        <div class="btn-search">
+                            <span>Tìm vé</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="content">
+            <!--Tuyến đường phổ biến-->
+            <div class="content-list" id="tuyen-duong-pho-bien">
+                <h2 class="content-heading">Tuyến đường phổ biến</h2>
+                <div class="content-items">
+                    <div class="cr-item">
+                        <div class="cr-img" style="background-image: url('./assets/img/Road-SG-DL.png');">
+                        </div>
+                        <div class="cr-item-body" style="background-color: #c6324e;">
+                            <a href="" class="cr-item-heading">Sài Gòn - Đà Lạt</a>
+                            <p class="cr-item-decs">Từ 150.000đ</p>
+                        </div>
+                    </div>
+                    <div class="cr-item">
+                        <div class="cr-img" style="background-image: url('./assets/img/Road-SG-NT.png');">
+                        </div>
+                        <div class="cr-item-body" style="    background-color: rgb(158, 148, 124);">
+                            <a href="" class="cr-item-heading">Sài Gòn - Nha Trang</a>
+                            <p class="cr-item-decs">Từ 200.000đ</p>
+                        </div>
+                    </div>
+                    <div class="cr-item">
+                        <div class="cr-img" style="background-image: url('./assets/img/Road-SG-PT.png');">
+                        </div>
+                        <div class="cr-item-body" style="background-color: #4c6c8c;">
+                            <a href="" class="cr-item-heading">Sài Gòn - Phan Thiết</a>
+                            <p class="cr-item-decs">Từ 160.000đ</p>
+                        </div>
+                    </div>
+                    <div class="cr-item">
+                        <div class="cr-img" style="background-image: url('./assets/img/Road-NT-SG.png');">
+                        </div>
+                        <div class="cr-item-body" style="background-color: #d3b291;">
+                            <a href="" class="cr-item-heading">Nha Trang - Sài Gòn</a>
+                            <p class="cr-item-decs">Từ 200.000đ</p>
+                        </div>
+                    </div>
+                    <div class="cr-item">
+                        <div class="cr-img" style="background-image: url('./assets/img/Road-SG-BMT.png');">
+                        </div>
+                        <div class="cr-item-body" style="background-color: #131d30;">
+                            <a href="" class="cr-item-heading">Sài Gòn - Buôn Ma Thuột</a>
+                            <p class="cr-item-decs">Từ 220.000đ</p>
+                        </div>
+                    </div>
+                    <div class="cr-item">
+                        <div class="cr-img" style="background-image: url('./assets/img/Road-SG-VT.png');">
+                        </div>
+                        <div class="cr-item-body" style="background-color: #d0906c;">
+                            <a href="" class="cr-item-heading">Sài Gòn - Vũng Tàu</a>
+                            <p class="cr-item-decs">Từ 150.000đ</p>
+                        </div>
+                    </div>
+                    <div class="cr-item">
+                        <div class="cr-img" style="background-image: url('./assets/img/Road-HN-HP.png');">
+                        </div>
+                        <div class="cr-item-body" style="background-color: #585279;">
+                            <a href="" class="cr-item-heading">Hà Nội - Hải Phòng</a>
+                            <p class="cr-item-decs">Từ 100.000đ</p>
+                        </div>
+                    </div>
+                    <div class="cr-item">
+                        <div class="cr-img" style="background-image: url('./assets/img/Road-SG-PR.png');">
+                        </div>
+                        <div class="cr-item-body" style="background-color: #8a9bb4;">
+                            <a href="" class="cr-item-heading">Sài Gòn - Phan Rang</a>
+                            <p class="cr-item-decs">Từ 180.000đ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Ưu đãi-->
+            <div class="content-list" id="uu-dai">
+                <h2 class="content-heading">Ưu đãi</h2>
+                <div class="content-items">
+                    <div class="disc-item">
+                        <div class="disc-img" style="background-image: url('./assets/img/disc1.jpg');"></div>
+                        <div class="disc-item-body">
+                            <a href="">Ưu đãi các tuyến đường HOT lên đến 50%</a>
+                        </div>
+                    </div>
+                    <div class="disc-item">
+                        <div class="disc-img" style="background-image: url('./assets/img/disc2.png');"></div>
+                        <div class="disc-item-body">
+                            <a href="">Dành cho KH mới - Giảm đến 25% khi đặt VeXeVip</a>
+                        </div>
+                    </div>
+                    <div class="disc-item">
+                        <div class="disc-img" style="background-image: url('./assets/img/disc3.png');"></div>
+                        <div class="disc-item-body">
+                            <a href="">Tổng hợp chương trình khuyến mãi trong tháng</a>
+                        </div>
+                    </div>
+                    <div class="disc-item">
+                        <div class="disc-img" style="background-image: url('./assets/img/disc4.jpg');"></div>
+                        <div class="disc-item-body">
+                            <a href="">Giối thiệu bạn mới - Nhận quà khủng từ VeXeVip</a>
+                        </div>
+                    </div>
+                    <div class="disc-item">
+                        <div class="disc-img" style="background-image: url('./assets/img/disc5.png');"></div>
+                        <div class="disc-item-body">
+                            <a href="">Ưu đãi bất ngờ ngay khi đặt VeXeVip</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Feedback của khách hàng-->
+            <div class="content-list" id="feedback-kh">
+                <h2 class="content-heading">Khách hàng nói gì về VeXeVip</h2>
+                <div class="fb-wrapper">
+                    <div class="fb-items">
+                        <div class="fb-item">
+                            <div class="fb-infor">
+                                <div class="fb-img"
+                                    style="background-image: url('./assets/img/Custumer1.jpg');"></div>
+                                <h2 class="fb-name">Anh Nguyễn Tuấn Quỳnh</h2>
+                                <h3 class="fb-duty">CEO Saigon Books</h3>
+                            </div>
+                            <div class="fb-content">
+                                Lần trước tôi có việc gấp phải đi công tác, lên mạng tìm đặt vé xe thì tình cờ tìm thấy
+                                VeXeRe.
+                                Sau khi tham khảo, tôi quyết định đặt vé và thanh toán. Công nhận rất tiện và nhanh
+                                chóng.
+                                Chỉ một lúc sau, nhà xe liên hệ xác nhận vé ngay và thông báo thời gian xe dự kiến đón
+                                để tôi chuẩn bị.
+                                Tôi khá bất ngờ vì nhà xe có thông tin của mình nhanh đến vậy. Chuyến đi hôm đó rất
+                                tuyệt.
+                                Tôi nhất định sẽ tiếp tục ủng hộ VeXeRe.
+                            </div>
+                        </div>
+                        <div class="fb-item">
+                            <div class="fb-infor">
+                                <div class="fb-img"
+                                    style="background-image: url('./assets/img/Custumer2.jpg');"></div>
+                                <h2 class="fb-name">Shark Phi</h2>
+                                <h3 class="fb-duty">Giám đốc BSSC</h3>
+                            </div>
+                            <div class="fb-content">
+                                Các đối tác của VeXeRe đều là những hãng xe lớn, có uy tín nên tôi hoàn toàn yên tâm khi
+                                lựa chọn đặt vé cho bản thân và gia đình.
+                                Nhờ hiển thị rõ nhà xe và vị trí chỗ trống trên xe, tôi rất dễ dàng tìm vé mình muốn và
+                                chỗ mình muốn ngồi.
+                                Còn hình thức thanh toán có cả thẻ, ví, tại nhà xe và tốc độ thanh toán thì siêu nhanh,
+                                tiết kiệm cho tôi rất nhiều thời gian.
+                            </div>
+                        </div>
+                        <div class="fb-item">
+                            <div class="fb-infor">
+                                <div class="fb-img"
+                                    style="background-image: url('./assets/img/Custumer3.jpg');"></div>
+                                <h2 class="fb-name">Chị Tú Ngô</h2>
+                                <h3 class="fb-duty">YOLA Co-Founder</h3>
+                            </div>
+                            <div class="fb-content">
+                                VeXeRe là ứng dụng đầu tiên tôi nghĩ tới khi cần đặt vé xe.
+                                Vì không những VeXeRe có nhiều ưu đãi lớn mà còn có nhiều hãng xe chất lượng, tôi được
+                                tuỳ chọn chỗ yêu thích nên tôi rất hài lòng.
+                            </div>
+                        </div>
+                        <div class="fb-item">
+                            <div class="fb-infor">
+                                <div class="fb-img"
+                                    style="background-image: url('./assets/img/Custumer4.jpg');"></div>
+                                <h2 class="fb-name">Bữu Vi Vu</h2>
+                                <h3 class="fb-duty">Travel tiktoker</h3>
+                            </div>
+                            <div class="fb-content">
+                                Tôi thường chọn đặt vé tại VeXeRe mỗi khi du lịch cùng người thân, bạn bè.
+                                Bên cạnh việc đặt vé nhanh chóng, thuận tiện, VeXeRe còn có các đợt Flashsale định kỳ
+                                lên đến 50%.
+                                Săn vé thành công vào các dịp này giúp tôi tiết kiệm đáng kể chi phí đi lại cho mỗi
+                                chuyến đi.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-contain">
+                    <ul class="btn-list">
+                        <li class="btn-item btn-prev" style="background-color: var(--primary-color);"></li>
+                        <li class="btn-item btn-next"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <div class="footer-top">
+                <div class="ft-news ft-child">
+                    <div class="ft-header">Tin tức</div>
+                    <div class="ft-items">
+                        <a href="#" class="ft-item">Xe giường nằm Limousine – đỉnh cao mới của ngành xe khách</a>
+                        <a href="#" class="ft-item">Xe limousine đi Vũng Tàu: Tổng hợp top 6 xe chất lượng cao</a>
+                        <a href="#" class="ft-item">Review xe limousine đi Đà Lạt: những câu hỏi thường gặp</a>
+                        <a href="#" class="ft-item">Xe limousine đi Sapa: Tổng hợp top các hãng xe chất lượng cao</a>
+                    </div>
+                </div>
+                <div class="ft-roads ft-child">
+                    <div class="ft-header">Tuyến đường</div>
+                    <div class="ft-items">
+                        <a href="#" class="ft-item">Xe đi Buôn Mê Thuột từ Sài Gòn</a>
+                        <a href="#" class="ft-item">Xe đi Vũng Tàu từ Sài Gòn</a>
+                        <a href="#" class="ft-item">Xe đi Nha Trang từ Sài Gòn</a>
+                        <a href="#" class="ft-item">Xe đi Đà Lạt từ Sài Gòn</a>
+                        <a href="#" class="ft-item">Xe đi Sapa từ Hà Nội</a>
+                        <a href="#" class="ft-item">Xe đi Hải Phòng từ Hà Nội</a>
+                        <a href="#" class="ft-item">Xe đi Vinh từ Hà Nội</a>
+                    </div>
+                </div>
+                <div class="ft-vehical ft-child">
+                    <div class="ft-header">Xe Limousine</div>
+                    <div class="ft-items">
+                        <a href="#" class="ft-item">Xe Limousine đi Đà Lạt từ Sài Gòn</a>
+                        <a href="#" class="ft-item">Xe Limousine đi Vũng Tàu từ Sài Gòn</a>
+                        <a href="#" class="ft-item">Xe Limousine đi Nha Trang từ Sài Gòn</a>
+                        <a href="#" class="ft-item">Xe Limousine đi Hải Phòng từ Hà Nội</a>
+                        <a href="#" class="ft-item">Xe Limousine đi Hạ Long từ Hà Nội</a>
+                        <a href="#" class="ft-item">Xe Limousine đi Sapa Từ Hà Nội</a>
+                        <a href="#" class="ft-item">Xe Limousine đi Sapa Từ Hà Nội</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-middle">
+                <div class=" ft-station ft-child">
+                    <div class="ft-header">Bến xe</div>
+                    <div class="ft-items">
+                        <a href="#" class="ft-item">Bến xe Miền Đông</a>
+                        <a href="#" class="ft-item">Bến xe Trung tâm Đà Nẵng</a>
+                        <a href="#" class="ft-item">Bến xe Gia Lâm</a>
+                        <a href="#" class="ft-item">Bến xe Mỹ Đình</a>
+                        <a href="#" class="ft-item">Bến xe An Sương</a>
+                        <a href="#" class="ft-item">Bến xe Nước Ngầm</a>
+                        <a href="#" class="ft-item">Bến xe Miền Tây</a>
+                    </div>
+                </div>
+                <div class="ft-NhaXe ft-child">
+                    <div class="ft-header">Nhà Xe</div>
+                    <div class="ft-items">
+                        <a href="#" class="ft-item">Xe Sao Việt</a>
+                        <a href="#" class="ft-item">Xe Taxi Hoa Mai</a>
+                        <a href="#" class="ft-item">Xe Hạ Long Travel</a>
+                        <a href="#" class="ft-item">Xe Quốc Đạt</a>
+                        <a href="#" class="ft-item">Xe Thanh Bình Xanh</a>
+                        <a href="#" class="ft-item">Xe Thiện Thành limousine</a>
+                        <a href="#" class="ft-item">Xe Hồng Sơn Phú Yên</a>
+                        <a href="#" class="ft-item">Xe Tiến Oanh</a>
+                        <a href="#" class="ft-item">Xe Hải Âu</a>
+                        <a href="#" class="ft-item">Xe Queen Cafe</a>
+                        <a href="#" class="ft-item">Xe Hưng Long</a>
+                        <a href="#" class="ft-item">Xe Xuân Tráng Limousine</a>
+                        <a href="#" class="ft-item">Xe Nam Á Châu</a>
+                        <a href="#" class="ft-item">Xe Khanh Phong</a>
+                        <a href="#" class="ft-item">Xe An Anh (Quê Hương)</a>
+                        <a href="#" class="ft-item">Xe Minh Quốc</a>
+                        <a href="#" class="ft-item">Xe Văn Minh</a>
+                        <a href="#" class="ft-item">Xe Quang Nghị</a>
+                        <a href="#" class="ft-item">Xe Xuân Trường</a>
+                        <a href="#" class="ft-item">Xe Hạnh Cafe</a>
+                        <a href="#" class="ft-item">Xe Trọng Minh</a>
+                        <a href="#" class="ft-item">Xe Ngọc Ánh Sài Gòn</a>
+                        <a href="#" class="ft-item">Xe Hoa Mai</a>
+                        <a href="#" class="ft-item">Xe Thuận Tiến</a>
+                    </div>
+                </div>
+            </div>
+            <hr class="ft-line">
+            <div class="ft-menu">
+                <div class="ft-about ft-child">
+                    <div class="ft-header">Về chúng tôi</div>
+                    <div class="ft-items">
+                        <a href="#" class="ft-item">Phần mềm đại lý</a>
+                        <a href="#" class="ft-item">Giới thiệu VeXeVip.com</a>
+                        <a href="#" class="ft-item">Tuyển dụng</a>
+                        <a href="#" class="ft-item">Tin tức</a>
+                        <a href="#" class="ft-item">Liên hệ</a>
+                    </div>
+                </div>
+                <div class="ft-certify ft-child">
+                    <div class="ft-header">Chứng nhận</div>
+                    <div class="certify-row">
+                        <img src="./assets/img/certificate-1.png" alt="">
+                    </div>
+                    <div class="certify-row">
+                        <img src="./assets/img/certificate-2.png" alt="">
+                    </div>
+                    <div class="certify-row">
+                        <a href="http://online.gov.vn/Home/AppDetails/462?AspxAutoDetectCookieSupport=1">
+                            <img src="./assets/img/certificate-3.png" alt="">
+                        </a>
+                    </div>
+                    <div class="certify-row">
+                        <a href="http://online.gov.vn/Home/WebDetails/70277">
+                            <img src="./assets/img/certificate-4.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="ft-download ft-child">
+                    <div class="ft-header">Tải ứng dụng VeXeVip</div>
+                    <a href="#">
+                        <img src="./assets/img/AP-icon-edit.png" alt="" style="width: 150px; height: 49px;">
+                    </a>
+                    <a href="#">
+                        <img src="./assets/img/GP-icon-edit.png" alt="" style="width: 150px; height: 49px;">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="ft-license-wrapper">
+            <h3 class="license-heading">Công ty TNHH Thương Mại Dịch Vụ VeXeVip</h3>
+            <div>Địa chỉ đăng ký kinh doanh: 8C Chữ Đồng Tử, Phường 7, Quận Tân Bình, Thành Phố Hồ Chí Minh, Việt Nam
+            </div>
+            <div>Địa chỉ: Lầu 8 Tòa nhà CirCO, 222 Điện Biên Phủ, Quận 3, TP. Hồ Chí Minh, Việt Nam</div>
+            <div>Giấy chứng nhận ĐKKD số 0315133726 do Sở KH và ĐT TP. Hồ Chí Minh cấp lần đầu ngày 27/6/2018</div>
+            <div>Bản quyền © 2020 thuộc về VeXeVip.Com</div>
+        </div>
+    </div>
+    <button class="scroll-up">
+        <div class="scroll-up-contain"><i class="fa-solid fa-arrow-up"></i></div>
+    </button>
+</body>
+
+<script src="./js/TrangChu.js"></script>
+
+</html>

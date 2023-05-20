@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://vexere.com/images/vexere-ico.ico?v=0.0.3" type="image/x-icon">
+    <title>Vé Xe Vip</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=vietnamese" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/buyTicketPage.css">
+</head>
+<body>
+    <!-- home page -->
+    <div id="header">
+        <div class="logo">
+            <img src="./assets/img/logo-web.png" alt="">
+        </div>
+        <ul id="nav">
+            <li><a href="">Tuyến đường phổ biến</a></li>
+            <li><a href="">Ưu đãi</a></li>
+            <li><a href="">Feedback của khách hàng</a></li>
+            <li>
+                <a class="btn-hotline" href="">
+                    <i class="fa-solid fa-phone"></i>
+                    Hotline
+                </a>
+            </li>
+            <li>
+                <div class="user">
+                    <i class="fa-solid fa-user"></i>
+                    <i class="fa-solid fa-caret-down" style="padding-left: 10px;"></i>
+                    <ul class="sub-menu">
+                        <li class="sub-item">
+                            <div class="icon-contain">
+                                <i class="fa-regular fa-user"></i>
+                            </div>
+                            <a href="./ThongTinTK.html">Thông tin tài khoản</a>
+                        </li>
+                        <li class="sub-item">
+                            <div class="icon-contain">
+                                <i class="fa-solid fa-user-tag"></i>
+                            </div>
+                            <a >Thành viên <b>thường</b></a>
+                        </li>
+                        <li class="sub-item">
+                            <div class="icon-contain">
+                                <i class="fa-solid fa-ticket"></i>
+                            </div>
+                            <a href="./VeCuaToi.html">Vé của tôi</a>
+                        </li>
+                        <li class="sub-item">
+                            <div class="icon-contain">
+                                <i class="fa-solid fa-gift"></i>
+                            </div>
+                            <a >Ưu đãi</a>
+                        </li>
+                        <li class="sub-item">
+                            <div class="icon-contain">
+                                <i class="fa-regular fa-credit-card"></i>
+                            </div>
+                            <a >Quản lý thẻ</a>
+                        </li>
+                        <li class="sub-item">
+                            <div class="icon-contain">
+                                <i class="fa-regular fa-comment-dots"></i>
+                            </div>
+                            <a >Nhận xét chuyến đi</a>
+                        </li>
+                        <li class="sub-item">
+                            <div class="icon-contain">
+                                <i class="fa-solid fa-right-from-bracket"></i>
+                            </div>
+                            <a id="logout">Đăng xuất</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!-- buy ticket page -->
+    <div class="buytk-page">
+        <div class="buytk-page__path">
+            <span class="back-trang-chu">Vé xe khách</span> <span class="buytk-page__path-location"><i class="fa-solid fa-chevron-right"></i> xe đi Hà Nội đến Thái Bình</span>
+        </div>
+        <div class="buytk-page__search">
+            <div class="tinh-thanh-input noi-di">
+                <i class="fa-solid fa-location-dot icon-location "></i>
+                <input type="text" name="" id="" class="input-noi-di" placeholder="Tỉnh, thành phố nơi đi" value="Hà Nội">
+                <ul class='form-input'>
+                    <header>Tỉnh - Thành phố</header>
+                    <ul class="thanh-pho-list">
+                    </ul>
+                </ul>
+            </div>
+            <div class="swap">
+                <i class="fa-solid fa-right-left icon-swap"></i>
+            </div>
+            <div class="tinh-thanh-input noi-den">
+                <i class="fa-solid fa-location-dot icon-location"></i>
+                <input type="text" name="" id="" class="input-noi-den" placeholder="Tỉnh, thành phố nơi đến" value="Thái Bình">
+                <ul class='form-input'>
+                    <header>Tỉnh - Thành phố</header>
+                    <ul class="thanh-pho-list">
+                    </ul>
+                </ul>
+            </div>
+            <div class="ngay-di">
+                <i class="fa-solid fa-calendar-days icon-calendar"></i>
+                <input type="date" name="" id="" class="input-ngay-di" placeholder="Nhập ngày đi">
+                
+            </div>
+            <div class="btn-search">
+                <span>Tìm vé</span>
+            </div>
+        </div>
+        <div class="buytk-main">
+            <div class="filter">
+                <div class="filter__header">Lọc vé xe</div>
+                <div class="filter__content">
+                    <div class="filter-time">
+                        <div class="filter-time__header">Giờ đi</div>
+                        <ul class="filter-time__list">
+                            <li class="filter-time__item">
+                                <div class="filter-time__item-title ">Sáng sớm</div>
+                                <div class="filter-time__item-time ">00:00 - 6:00</div>
+                            </li>
+                            <li class="filter-time__item">
+                                <div class="filter-time__item-title">Buổi sáng</div>
+                                <div class="filter-time__item-time">6:01 - 12:00</div>
+                            </li>
+                            <li class="filter-time__item">
+                                <div class="filter-time__item-title">Buổi chiều</div>
+                                <div class="filter-time__item-time">12:01 - 18:00</div>
+                            </li>
+                            <li class="filter-time__item">
+                                <div class="filter-time__item-title">Buổi tối</div>
+                                <div class="filter-time__item-time">18:01 - 23:59</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="filter-criteria">
+                        <div class="filter-crieria__header">Tiêu chí phổ biến</div>
+                        <ul class="filter-criteria__list">
+                            <li class="filter-crieria__item">
+                                <input type="checkbox" name="filter-crieria__checkbox" id="" class="filter-crieria__checkbox">
+                                <label for="filter-crieria__checkbox" class="filter-crieria__item-title">Không cần thanh toán trước</label>
+                                <div class="filter-crieria__item-description">Chuyến có thể thanh toán tại văn phòng nhà xe hoặc khi lên xe</div>
+                            </li>
+                            <li class="filter-crieria__item">
+                                <input type="checkbox" name="filter-crieria__checkbox" id="" class="filter-crieria__checkbox">
+                                <label for="filter-crieria__checkbox" class="filter-crieria__item-title">Chuyến có trung chuyển đón/trả</label>
+                                <div class="filter-crieria__item-description">Chuyến có đón/trả tận nơi tại một số khu vực nhất định</div>
+                            </li>
+                            <li class="filter-crieria__item">
+                                <input type="checkbox" name="filter-crieria__checkbox" id="" class="filter-crieria__checkbox">
+                                <label for="filter-crieria__checkbox" class="filter-crieria__item-title">Chuyến có giảm giá & khuyến mãi</label>
+                                <div class="filter-crieria__item-description">Chuyến có giảm giá trực tiếp từ nhà xe hoặc có mã giảm giá của VeXeVip</div>
+                            </li>
+                            <li class="filter-crieria__item">
+                                <input type="checkbox" name="filter-crieria__checkbox" id="" class="filter-crieria__checkbox">
+                                <label for="filter-crieria__checkbox" class="filter-crieria__item-title">Cho phép xem vị trí xe</label>
+                                <div class="filter-crieria__item-description">Chuyến có cung cấp tín hiệu định vị cho phép bạn theo dõi vị trí xe khi di chuyển</div>
+                            </li>
+                            <li class="filter-crieria__item">
+                                <input type="checkbox" name="filter-crieria__checkbox" id="" class="filter-crieria__checkbox">
+                                <label for="filter-crieria__checkbox" class="filter-crieria__item-title">Chuyến được chọn trước chỗ ngồi</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="filter-price">
+                        <label for="filter-price__range" class="filter-price__header">Giá vé <span class="filter-price__range--select">2000000</span></label>
+                        <input type="range" name="filter-price__range" id="" min="0" max="2000000" class="filter-price__range" value="2000000">
+                        <div class="filter-price__description">
+                            <div class="filter-price__min">0 đ</div>
+                            <div class="filter-price__max">2,000,000 đ</div>
+                        </div>
+                    </div>
+                    <div class="filter-search">
+                        <div class="filter-search__header">Nhà xe</div>
+                        <input type="text" name="" id="" class="filter-search__input" placeholder="Tìm trong danh sách">
+                        <ul class="filter-search__list">
+                            <li class="filter-search__item">
+                                <input type="checkbox" name="" id="" class="filter-search__item-checkbox">
+                                <div class="filter-search__item-title">Hải Âu</div>
+                            </li>
+                            <li class="filter-search__item">
+                                <input type="checkbox" name="" id="" class="filter-search__item-checkbox">
+                                <div class="filter-search__item-title">Tuấn Anh</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="filter-search">
+                        <div class="filter-search__header">Điểm đón</div>
+                        <input type="text" name="" id="" class="filter-search__input" placeholder="Tìm trong danh sách">
+                        <ul class="filter-search__list">
+                            <li class="filter-search__item">
+                                <input type="checkbox" name="" id="" class="filter-search__item-checkbox">
+                                <div class="filter-search__item-title">Cầu giấy</div>
+                            </li>
+                            <li class="filter-search__item">
+                                <input type="checkbox" name="" id="" class="filter-search__item-checkbox">
+                                <div class="filter-search__item-title">Hà Đông</div>
+                            </li>
+                            <li class="filter-search__item">
+                                <input type="checkbox" name="" id="" class="filter-search__item-checkbox">
+                                <div class="filter-search__item-title">Gia Lâm</div>
+                            </li>
+                            <li class="filter-search__item">
+                                <input type="checkbox" name="" id="" class="filter-search__item-checkbox">
+                                <div class="filter-search__item-title">Hoàng Mai</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="filter-search">
+                        <div class="filter-search__header">Điểm trả</div>
+                        <input type="text" name="" id="" class="filter-search__input" placeholder="Tìm trong danh sách">
+                        <ul class="filter-search__list">
+                            <li class="filter-search__item">
+                                <input type="checkbox" name="" id="" class="filter-search__item-checkbox">
+                                <div class="filter-search__item-title">Thái thụy</div>
+                            </li>
+                            <li class="filter-search__item">
+                                <input type="checkbox" name="" id="" class="filter-search__item-checkbox">
+                                <div class="filter-search__item-title">Thái Bình</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="filter-rating">
+                        <div class="filter-rating__header">Đánh giá</div>
+                        <div class="filter-rating__icon">
+                            <i class="fa-solid fa-star icon-star-selected"></i>
+                            <i class="fa-solid fa-star icon-star-selected"></i>
+                            <i class="fa-solid fa-star icon-star-selected"></i>
+                            <i class="fa-solid fa-star icon-star-disable"></i>
+                            <i class="fa-solid fa-star icon-star-disable"></i>
+                            <div class="filter-rating-title">Trở lên</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- list sort-->
+            <div class="buy-ticket_main">
+                <div class="buy-ticket__header">Đặt vé <span class="buytk-page__path-location">xe đi Hà Nội đến Thái Bình</span> chất lượng cao và giá vé ưu đãi nhất: 10 chuyến</div>
+                <div class="buy-ticket__content">
+                    <ul class="buy-ticket__content-header">
+                        <li class="buytk-content__header-title">Sắp xếp theo: </li>
+                        <li class="buytk-content__header-item">Giờ đi sớm nhất</li>
+                        <li class="buytk-content__header-item">Giờ đi muộn nhất</li>
+                        <li class="buytk-content__header-item">Giá tăng dần</li>
+                        <li class="buytk-content__header-item">Giá giảm dần</li>
+                        <li class="buytk-content__header-item">Reset</li>
+                    </ul>
+                </div>
+                <!-- list ve -->
+                <div class="buy-ticket">
+                    <!-- ve thu 1 -->
+                    
+                    <!-- ve thu 2:  --> 
+    
+                     <!--  -->
+                </div>
+                <div class="buttonXemThem">Xem thêm</div>
+            </div>
+            
+        </div>
+    </div>
+    <!-- payment page -->
+    <!-- js -->
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="https://vexere.com/images/vexere-ico.ico?v=0.0.3" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/Thanh_toan.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <!-- <link rel="shortcut icon" href="https://vexere.com/images/vexere-ico.ico?v=0.0.3" type="image/x-icon"> -->
+    <title>Vé Xe Vip</title>
+    <!-- <link rel="stylesheet" href="/Vexe/css/responsiveThanhToan.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=vietnamese"rel="stylesheet">
+</head>
+
+<body>
+    <!-- thanh thời gian -->
+    <header>
+        <div class="head">
+            <div class="logo">
+                <img src="./assets/img/logo-web.png" alt="">
+            </div>
+            <div class="header-time">
+                <p>Thời gian thanh toán còn lại</p>
+                <div id="dem-nguoc"></div>
+            </div>
+        </div>
+    </header>
+    <!--Thanh toan-->
+
+    <body class="noi-dung">
+        <div class="thanh-toan">
+            <span class="sentence">Phương thức thanh toán đa dạng, bảo mật</span>
+            <div class="container">
+                <div class="ben-trai">
+                    <h3>Phương thức thanh toán</h3>
+                    <div>
+                        <!--Chon phuong thuc thanh toan-->
+                        <ul action="" class="bo-tron">
+                            <li class="left-choice mrg">
+                                <div class="chon-phuong-thuc">
+                                    <input type="radio" id="MoMo" name="selector" onchange="toggleHuongDan('MoMo')">
+                                    <img src="./assets/img/momo.jpg" alt="" class="size-img">
+                                    <label for="">Ví MoMo</label>
+                                </div>
+                                <p>Điện thoại của bạn phải được cài đặt ứng dụng MoMo</p>
+                                <div class="huong-dan" id="huongDanMoMo">
+                                    <label for="" style="font-weight: 500; margin-bottom: 10px;">Hướng dẫn thanh toán</label>
+                                    <p>1. Bạn sẽ được chuyển đến ứng dụng MoMo</p><br>
+                                    <p>2. Nhập thông tin thẻ thanh toán mới hoặc chọn thanh toán
+                                        qua MoMo/thẻ đã liên kết với ví MoMo
+                                    </p><br>
+                                    <p>3. Chọn "Thanh toán" để tiến hành thanh toán vé</p>
+                                </div>
+                                <hr>
+                            </li>
+                            <li class="left-choice mrg">
+                                <div class="chon-phuong-thuc">
+                                    <input type="radio" id="MasterCard" name="selector" onchange="toggleHuongDan('MasterCard')">
+                                    <i class="fa-regular fa-credit-card size-i"></i>
+                                    <label for="">Thẻ thanh toán quốc tế</label>
+                                </div>
+                                <p>Thẻ Visa, MasterCard, JCB</p>
+                                <hr>
+                            </li>
+                            <li class="left-choice mrg">
+                                <div class="chon-phuong-thuc">
+                                    <input type="radio" id="ATM" name="selector" onchange="toggleHuongDan('ATM')">
+                                    <img src="./assets/img/atm-card.png" alt="">
+                                    <label for="">Thẻ ATM nội địa / Internet Banking</label>
+                                </div>
+                                <p>Tài khoản phải có đăng kí Internet banking</p>
+                                <hr>
+                            </li>
+                            <li class="left-choice mrg">
+                                <div class="chon-phuong-thuc">
+                                    <input type="radio" id="ZaloPay" name="selector" onchange="toggleHuongDan('ZaloPay')">
+                                    <img src="./assets/img/zalo-pay.png" alt="">
+                                    <label for="">Ví Zalopay</label>
+                                </div>
+                                <p>Điện thoại của bạn phải được cài đặt ứng dụng Zalopay</p>
+                                <div class="huong-dan js-huong-dan" id="huongDanZaloPay">
+                                    <label for="" style="font-weight: 500;">Hướng dẫn thanh toán</label>
+                                    <p>1. Bạn sẽ được chuyển đến ứng dụng ZaloPay</p><br>
+                                    <p>2. Nhập thông tin thẻ thanh toán mới hoặc chọn thanh toán
+                                        qua ZaloPay/thẻ đã liên kết với ví ZaloPay
+                                    </p><br>
+                                    <p>3. Chọn "Thanh toán" để tiến hành thanh toán vé</p>
+                                </div>
+                                <hr>
+                            </li>
+                            <li class="left-choice mrg">
+                                <div class="chon-phuong-thuc">
+                                    <input type="radio" id="VNPAY" name="selector" onchange="toggleHuongDan('VNPAY')">
+                                    <img src="./assets/img/Icon-VNPAY-QR-350x274.png" alt="">
+                                    <label for="">Thanh toán VNPAY - QR</label>
+                                </div>
+                                <p>Thiết bị cần cài đặt ứng dụng ngân hàng (Mobile Banking) hoặc Ví VNPAY</p>
+                                <hr>
+                            </li>
+                            <li class="left-choice mrg">
+                                <div class="chon-phuong-thuc">
+                                    <input type="radio" id="ShopeePay" name="selector" onchange="toggleHuongDan('ShopeePay')">
+                                    <img src="./assets/img/unnamed.png" alt="">
+                                    <label for="">Ví ShopeePay</label>
+                                </div>
+                                <p>Điện thoại của bạn phải được cài đặt ứng dụng ShopeePay</p>
+                                <div class="huong-dan" id="huongDanShopeePay">
+                                    <label for="" style="font-weight: 500;">Hướng dẫn thanh toán</label>
+                                    <p>1. Bạn sẽ được chuyển đến ứng dụng ShopeePay</p><br>
+                                    <p>2. Nhập thông tin thẻ thanh toán mới hoặc chọn thanh toán
+                                        qua ShopeePay/thẻ đã liên kết với ví ShopeePay
+                                    </p><br>
+                                    <p>3. Chọn "Thanh toán" để tiến hành thanh toán vé</p>
+                                </div>
+                                <hr>
+                            </li>
+                            <li class="left-choice mrg">
+                                <div class="chon-phuong-thuc">
+                                    <input type="radio" id="Moca" name="selector"onchange="toggleHuongDan('Moca')">
+                                    <img src="./assets/img/GrabPayVn-LogoGPM.png" alt="" >
+                                    <label for="">Ví điện tử Moca trên ứng dụng Grab</label>
+                                </div>
+                                <p>Điện thoại của bạn phải được cài đặt ứng dụng Grab</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--Thong tin khach hang-->
+                <div class="ben-phai">
+                    <h3>Thông tin chuyến đi</h3>
+                    <div class="infor-chuyen-di bo-tron">
+                        <div class="infor-khach mrg">
+                            <div class="infor-chitiet mrg-bt">
+                                <div class="sua-infor">
+                                    <label for="" class="font-color">Hành khách</label>
+                                    <div class="sua-tt">
+                                        <i class="fa-solid fa-pencil"></i>
+                                        <button class="js-update-infor-ca-nhan">Sửa</button>
+                                    </div>
+                                </div>
+                                <span data-name="ten-hanh-khach">Nguyễn Ngọc Đức</span>
+                            </div>
+                            <div class="infor-chitiet mrg-bt">
+                                <label for="" class="font-color">Số điện thoại</label>
+                                <span data-name="so-dien-thoai">0123456789</span>
+                            </div>
+                            <div class="infor-chitiet mrg-bt">
+                                <label for="" class="font-color">Email</label>
+                                <span data-name="email">test@gmail.com</span>
+                            </div>
+                            <div class="infor-chitiet mrg-bt">
+                                <label for="" class="font-color">Số CMND/CCCD</label>
+                                <span data-name="so-cmnd"></span>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="infor-chuyen-di-diem mrg">
+                            <div class="DIEMDON">
+                                <div class="infor-chitiet">
+                                    <label for="" class="font-color">Nhà xe</label>
+                                    <span class="ten-nha-xe">Hải Âu</span>
+                                </div>
+                                <div class="infor-chitiet">
+                                    <div class="sua-infor">
+                                        <label for="" class="font-color">Điểm đón (dự kiến)</label>
+                                        <div class="sua-tt">
+                                            <i class="fa-solid fa-pencil"></i>
+                                            <button type="submit" class="js-update-infor-diem-don">Thay đổi</button>
+                                        </div>
+                                    </div>
+                                    <span style="margin-bottom: 10px;" id="time-diem-don" class="thoi-gian-don">12:40 - T4, 23/03/2023</span>
+                                    <span data-name="diem-don" class="dia-diem-bd">Bến xe Thái Bình</span>
+                                </div>
+                            </div>
+                            <div class="DIEMTRA">
+                                <div class="infor-chitiet">
+                                    <div class="sua-infor">
+                                        <label for="" class="font-color">Điểm trả (dự kiến)</label>
+                                        <div class="sua-tt">
+                                            <i class="fa-solid fa-pencil"></i>
+                                            <button type="submit" class="js-update-infor-diem-tra">Thay đổi</button>
+                                        </div>
+                                    </div>
+                                    <span style="margin-bottom: 10px;" id="time-diem-tra" class="thoi-gian-tra">15:00 - T4, 23/03/2023</span>
+                                    <span data-name="diem-tra" class="dia-diem-kt"> Bến xe Gia Lâm</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="giam-gia">
+                        <h3>Bạn có mã giảm giá?</h3>
+                        <div class="infor-chitiet bo-tron ma-giam-gia">
+                            <span>Mã giảm giá</span>
+                            <span><a>Chọn hoặc nhập mã </a></span>
+                        </div>
+                    </div>
+                    <div class="tong-tien">
+                        <label for="">
+                            <h3>Tổng tiền</h3>
+                        </label>
+                        <span>150.000 đ</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </body>
+    <div class="thanh-toan-bao-mat">
+        <div class="btn" id="btn-thanh-toan">
+            <button class="btn-thanh-toan-bao-mat" type="submit">THANH TOÁN BẢO MẬT</button>
+            <span class="font-color">
+                Bằng việc nhấn nút Thanh toán bảo mật,<br>
+                bạn đồng ý với <a href="" style="color: var(--primary-color);"> Chính sách bảo mật thanh toán</a>
+            </span>
+        </div>
+    </div>
+
+    <!-- Sửa thông tin hành khách -->
+
+    <div class="sua-thong-tin-KH js-sua-thong-tin-KH">
+        <div class="sua-tt-KH-container js-sua-tt-KH-container">
+            <div class="sua-tt-close js-sua-tt-close">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+
+            <div class="sua-tt-KH-header">
+                <h3>Chỉnh sửa thông tin hành khách</h3>
+                <hr>
+            </div>
+
+            <div class="sua-tt-KH-body">
+                <div class="form-name">
+                    <label for="name" class="sua-tt-label">Họ tên<span>*</span></label>
+                    <div id="empty-name"></div>
+                    <input type="text" id="name" class="sua-tt-input" placeholder="">
+                </div>
+
+                <div class="form-sdt">
+                    <label for="phone" class="sua-tt-label">Số điện thoại<span>*</span></label>
+                    <div id="empty-phone"></div>
+                    <input type="tel" id="phone" class="sua-tt-input" placeholder="">
+                </div>
+
+                <div class="form-email">
+                    <label for="email" class="sua-tt-label">Email để nhận thông tin vé</label>
+                    <div id="empty-email"></div>
+                    <input type="email" class="sua-tt-input" id="email" placeholder="test@gmail.com">
+                </div>
+
+                <div class="form-CMND">
+                    <label for="CMND" class="sua-tt-label">CMND</label>
+                    <input type="text" class="sua-tt-input" placeholder="Số CMND" id="CMND">
+                </div>
+
+                <label for="note" class="sua-tt-label">Ghi chú hoặc yêu cầu khác (Nếu có)</label>
+                <textarea name="" id="" cols="30" rows="3"
+                    placeholder="Các yêu cầu đặc biệt không thể được đảm bảo - nhưng nhà xe sẽ cố gắng hết sức để đáp ứng nhu cầu của bạn"></textarea>
+
+                <button id="update" disabled>Cập nhật</button>
+            </div>
+        </div>
+    </div>
+
+    <!--Sửa địa điểm đón-->
+    <!-- Sửa chọn chữ thành màu xanh -->
+    <div class="sua-thong-tin-diem-don js-sua-thong-tin-diem-don">
+        <div class="sua-tt-diem-don-container js-sua-tt-diem-don-container">
+            <div class="sua-tt-diem-don-close js-sua-tt-diem-don-close">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+
+            <div class="sua-tt-diem-don-header">
+                <h3>Thay đổi điểm đón</h3>
+                <hr>
+            </div>
+
+            <div class="sua-tt-diem-don-body">
+                <ul>
+                    <li class="dia-diem-don">
+                        <input type="radio" name="selector">
+                        <span class="time-diem-don-moi">05:00 Toyota Cầu Diễn</span>
+                        <p class="address">
+                            <i class="fa-solid fa-location-dot"></i>
+                            Số 10, Km 10 + 600, QL32, Cầu Diễn, Bắc Từ Liêm, Hà Nội
+                        </p>
+                    </li>
+                    <li class="dia-diem-don">
+                        <input type="radio" name="selector">
+                        <span class="time-diem-don-moi">05:00 Công viên Hòa Bình (Cổng sau)</span>
+                        <p class="address">
+                            <i class="fa-solid fa-location-dot"></i>
+                            Đường Ngô Minh Dương kéo dài, Phường Xuân Đỉnh, Bắc Từ Liêm, Hà Nội
+                        </p>
+                    </li>
+                    <li class="dia-diem-don">
+                        <input type="radio" name="selector">
+                        <span class="time-diem-don-moi">05:00 Quận Hà Đông</span>
+                        <p class="address">
+                            <i class="fa-solid fa-location-dot"></i>
+                            Hà Đông, Hà Nội
+                        </p>
+                    </li>
+                    <li class="dia-diem-don">
+                        <input type="radio" name="selector">
+                        <span class="time-diem-don-moi">05:00 Đường Võ Chí Công</span>
+                        <p class="address">
+                            <i class="fa-solid fa-location-dot"></i>
+                            Số 10, Km 10 + 600, QL32, Cầu Diễn, Bắc Từ Liêm, Hà Nội
+                        </p>
+                    </li>
+                    <li class="dia-diem-don">
+                        <input type="radio" name="selector">
+                        <span class="time-diem-don-moi">05:00 Bưởi</span>
+                        <p class="address">
+                            <i class="fa-solid fa-location-dot"></i>
+                            Bưởi, Tây Hồ, Hà Nội, Việt Nam
+                        </p>
+                    </li>
+                    <li class="dia-diem-don">
+                        <input type="radio" name="selector">
+                        <span class="time-diem-don-moi">05:00 Ngã 3 Lạc Long Quân - Âu Cơ</span>
+                        <p class="address">
+                            <i class="fa-solid fa-location-dot"></i>
+                            523 Âu Cơ, Phưởng Nhật Tân, Tây Hồ, Hà Nội
+                        </p>
+                    </li>
+                    <li class="dia-diem-don">
+                        <input type="radio" name="selector">
+                        <span class="time-diem-don-moi">05:05 Trường Đại học Công nghiệp Hà Nội</span>
+                        <p class="address">
+
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <button id="update-diem-don">Cập nhật</button>
+        </div>
+    </div>
+
+    <!-- Sửa điểm trả -->
+    <div class="sua-thong-tin-diem-tra js-sua-thong-tin-diem-tra">
+        <div class="sua-tt-diem-tra-container js-sua-tt-diem-tra-container">
+            <div class="sua-tt-diem-tra-close js-sua-tt-diem-tra-close">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+
+            <div class="sua-tt-diem-tra-header">
+                <h3>Thay đổi điểm trả</h3>
+                <hr>
+            </div>
+
+            <div class="sua-tt-diem-tra-body">
+                <ul>
+                    <li class="dia-diem-tra">
+                        <input type="radio" id="dia-diem" name="selector">
+                        <span class="time-diem-tra-moi">07:50 Văn phòng Tiền Hải</span>
+                        <p>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Thị trấn Tiền Hải, Tiền Hải, Thái Bình
+                        </p>
+                    </li>
+                    <li class="dia-diem-tra">
+                        <input type="radio" id="dia-diem" name="selector">
+                        <span class="time-diem-tra-moi">07:50 Khu ven đông tt Tiền Hải</span>
+                        <p></p>
+                    </li>
+                </ul>
+            </div>
+            <button id="update-diem-tra">Cập nhật</button>
+        </div>
+    </div>
+    <div class="thong-bao-thanh-toan">
+        <div class="thong-bao-thanh-toan-container">
+            <div class="dong-thong-bao">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <p class="alert">Bạn có xác nhận thanh toán ?</p>
+            <div class="nut-bam-xac-nhan">
+                <button id="btn-ok">Xác nhận</button>
+                <button id="khong">không</button>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="./js/Thanh_toan.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,197 @@
+:root {
+    --white-color : #fff;
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --primary-color: #2474e5;
+    --border-color: #a1a8b1;
+    --yellow-color : #ffc700;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%; /* <=> 10px*/
+    line-height: 1.2rem; /* 12px*/
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+.btn__border--selected {
+    border: 2px solid var(--primary-color) !important;
+    color: var(--primary-color) !important;
+}
+/* amimation */
+@keyframes to-nho {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes trai-phai {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+/* search ticket */
+
+.buytk-page__search {
+    display: flex;
+    width: 100%;
+    height: 56px;
+    align-items: center;
+    border: 1px solid var(--border-color);
+    border-right: none ;
+    border-radius: 4px;
+    background-color: var(--white-color);
+}
+.noi-den,
+.noi-di {
+    flex: 3;
+    position: relative;
+}
+.noi-den::after,
+.noi-di::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 1px;
+    height: 48px;
+    top: 50%;
+    right: -16px;
+    transform: translateY(-50%);
+    background-color: var(--border-color);
+ }
+ .noi-den::after {
+    right: 0;
+ }
+.icon-swap {
+    flex: 0.5;
+}
+.icon-calendar,
+.icon-location {
+    color: var(--primary-color);
+    font-size: 20px;
+    padding: 0 28px;
+}
+.swap {
+    border: 1px solid var(--primary-color);
+    border-radius: 50%;
+    z-index: 1;
+    background-color: var(--white-color);
+    cursor: pointer;
+}
+
+.icon-swap {
+    color: var(--primary-color);
+    font-size: 14px;
+    padding: 8px;
+}
+.input-noi-den,
+.input-ngay-di,
+.input-noi-di {
+    border: none;
+    outline: none;
+    font-size: 18px;
+    color: var(--text-color);
+    padding: 17px 1px;
+    width: 80%;
+}
+.noi-den:hover,
+.ngay-di:hover,
+.noi-di:hover{
+    border: 1.5px solid var(--primary-color);
+} 
+.noi-di:hover {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+.noi-di:hover {
+    border-right: none;
+}
+.ngay-di:hover,
+.noi-den:hover {
+    border-left: none ;
+    border-right: none;
+}
+.ngay-di {
+    flex: 2;
+}
+
+.input-ngay-di {
+    width: 65%;
+    padding: 15px 0;
+    cursor: text;
+}
+.btn-search {
+    flex: 1.2;
+    background-color: #ffc500;
+    height: calc(100% + 1px);
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.btn-search span {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--text-color);
+    text-align: center;
+}
+.btn-search:hover {
+    background-color: #f8ae00;
+}
+/* form chọn thành phố */
+.tinh-thanh-input {
+    position: relative;
+}
+.thanh-pho-list {
+    list-style: none;
+    padding-left: 0;
+}
+.form-input {
+    position: absolute;
+    width: 100%;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 16px;
+    padding-bottom: 0;
+    list-style: none;
+    max-height: 200px;
+    overflow-y: auto;
+    display: none;
+    z-index: 1;
+    background-color: white;
+    box-shadow: 0 0 3px var(--border-color);
+}
+.form-input header {
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.thanh-pho-item {
+    font-size: 14px;
+    color: var(--text-color);
+    padding: 12px;
+    border-radius: 2px;
+}
+.thanh-pho-item:hover {
+    background-color: #4688e57d;
+    cursor: pointer;
+}
+.tinh-thanh-input input:focus ~ .form-input {
+    display: block;
+}
